@@ -1,0 +1,62 @@
+@import "mixin";
+
+header {
+    @include displayAlign;
+    justify-content: space-between;
+    padding: 15px 28px 15px 24px;
+
+    h3 {
+        color: $red;
+        font-size: 20px;
+        font-weight: 700;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+    nav {
+        @include displayAlign;
+
+        ul {
+            li {
+                padding: 16px;
+                a {
+                text-decoration: none;
+                font-size: 16px;
+                color: $black;
+                font-weight: 700;
+
+                &:hover {
+                    color: $red;
+                }
+                }
+                }
+        }
+
+            .buttons {
+                display: flex;
+                margin-left: 24px;
+    
+                button {
+                    font-size: 16px;
+                    font-weight: 700;
+                    padding: 11px 22px;
+                    border-radius: 24px;
+                    border: none;
+                    @include displayAlign;
+                    justify-content: center;
+                }
+
+                .login {
+                    color: $white;
+                    background-color: $red;
+                }
+
+                .sign-up {
+                    margin-left: 16px;
+                    background: $gray-light;
+                }
+            }
+    }
+}

@@ -1,0 +1,9 @@
+@mixin displayAlign {
+    display: flex;
+    align-items: center;
+}
+
+@mixin opacityPointer {
+    opacity: 0;
+    pointer-events: none;
+}

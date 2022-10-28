@@ -1,0 +1,41 @@
+@import "mixin";
+
+.heading {
+    margin-top: 120px;
+    @include displayAlign;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.wrapper {
+    position: relative;
+
+    .offset {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-50%);
+    }
+
+    .text {
+        white-space: nowrap;
+        transition-duration: 1s;
+    }
+    .text1 {
+        color: $yellow;
+    }
+    .text2 {
+        color: $green;
+    }
+    .text3 {
+        color: $blue;
+    }
+    .text4 {
+        color: $orange;
+    }
+}

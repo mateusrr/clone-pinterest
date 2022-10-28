@@ -1,0 +1,11 @@
+@import "mixin";
+
+.animate-before {
+    transform: translateY(40px);
+    @include opacityPointer;
+}
+
+.animate-after {
+    transform: translateY(-40px);
+    @include opacityPointer;
+}
